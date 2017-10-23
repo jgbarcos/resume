@@ -1,0 +1,178 @@
+%% start of file `cv.tex'.
+% Based on the moderncv template by Xavier Danaux, original license:
+% Author: Xavier Danaux xdanaux@gmail.com
+% Licence: The LaTeX Project Public Li­cense, version 1.3c
+% URL: https://github.com/xdanaux/moderncv
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Javier}{García Barcos}
+\title{Experience and Qualifications}                               % optional, remove / comment the line if not wanted
+\address{Zaragoza (Spain)}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(+34) 654 996 330}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{javiergarciabarcos@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{jgbarcos.github.io}                         % optional, remove / comment the line if not wanted
+\social[github]{jgbarcos}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	\makecvtitle
+	
+	\section{Interests}
+	\begin{itemize}
+		\item \textbf{Machine Learning}: Bayesian Optimization, Neural Networks, Graphical Models.
+		\item \textbf{Game Development}: Gameplay, Artificial Intelligence, Game Engine.
+		\item But also: Computer Graphics, Computer Vision, IoT and Robotics.
+	\end{itemize}
+	
+	\section{Education}
+	\cventry{2015--2017}{Master's Degree in Computer Engineering}{Universidad de Zaragoza}{Spain}{}{
+		Relevant Courses:
+		\begin{itemize}
+			\item Machine Learning for Big Data, Computer Graphics and Multimedia Environments
+			\item High Performance Computing, Technologies for Distributed Applications
+			\item Strategic Business Administration
+		\end{itemize}
+	}
+	\cventry{2011--2015}{Bachelor's Degree in Computer Science}{Universidad de Zaragoza}{Spain}{}{
+		Relevant Courses:
+		\begin{itemize}
+			\item Advanced Algorithms, Compilers, Artificial Intelligence.
+			\item Machine Learning, Computer Graphics, Robotics, Computer Vision.
+			\item Software Verification and Validation, Software Engineering.
+		\end{itemize}
+	}
+	
+	\section{End-of-Degree Project}
+	\cvitem{title}{\emph{Bayesian Optimization applied into Fluid Dynamics problems}}
+	\cvitem{supervisors}{Rubén Martínez Cantín}
+	\cvitem{description}{Developed a framework to optimize long run-time fluid simulations with Bayesian Optimization, which allows faster black-box optimizations by reducing the number of evaluations. Used BayesOpt (C/C++ Bayesian Optimization library) and XFlow (CFD software).\newline Framework utility was showcased by the generation of physically correct wing shapes without no prior knowledge on aerodynamics.}
+	
+	\section{Experience}
+	\cventry{2016--2017\newline6 months}{Research Internship}{Centro Universitario de la Defensa }{ \newline General Military Academy of Zaragoza (Spain)}{}{
+		Detailed:
+		\begin{itemize}
+			\item Technology Transfer project in collaboration with NextLimit (under NDA).
+			\item Mantaining and Improving BayesOpt (C/C++ Bayesian Optimization Library).
+			\item Bayesian Optimization and MCMC Researching.
+		\end{itemize}
+	}
+	\section{Languages}
+	\cvitemwithcomment{Spanish}{Mother Tongue}{}
+	\cvitemwithcomment{English}{B2 Understanding | B1 Speaking | B1 Writing}{}
+	
+	\section{Personal Skills}
+	\cvitem{Rugby Player}{\textbf{Good-Communicator, Analytical, Calm under pressure } \newline 
+		Former rugby player for about 4 years. As a Scrum-half player, I was in charge of directing the forwards (8 players) and making tactical decisions on the field.}
+	\cvitem{Team Oriented}{\textbf{Flexible, Cooperative, Broad-Minded} \newline 
+		As a student I've been involved in multiple group projects composed of people with different cultural background, like foreign students, and with different technical knowledge. This requires to take into account each member's necessities, capabilities and personality to ensure a good result.}
+	\cvitem{Curiousity Driven}{\textbf{Independent, Motivated, Fast-learner} \newline
+		I'm always passionate about learning new things and technologies. It was that curiosity that drove me to taught myself how to program. }
+	
+	\section{Relevant Work}
+	\cventry{2016--Present}{SAFE}{Simple C++ 2D engine built over SDL}{}{}{
+		\begin{itemize}
+			\item Started to improve my Modern C++ skills while adquiring Game Engine insights.
+			\item Built with flexibility in mind: ECS architecture and Lua scripting support.
+		\end{itemize}
+	}
+	\cventry{2014--Present}{Collaborating with BayesOpt}{Open Source Bayesian Optimization Library}{}{}{
+		\begin{itemize}
+			\item Written in C/C++ with interfaces to Python and Matlab.
+			\item I've been helping BayesOpt's author with enhancing and mantaining library.
+		\end{itemize}
+	}		
+	\cventry{2016}{Realistic Camera Raytracer}{Realistic camera effects into a 3D Raytracer}{}{}{
+		\begin{itemize}
+			\item Final project for Computer Graphics Course.
+			\item Camera defects makes the rendered scene more realistic: Depth of field, lens scratches, lens dust, coded apertures and chromatic aberrations.
+			\item OpenMP paralelization to speed things up.
+		\end{itemize}
+	}
+	\cventry{2014--2015}{Unity Agents Project}{AI agents prototype using Unity}{}{}{
+		\begin{itemize}
+			\item Focused on automatic generation of navigation structures, agent spatial reasoning and perception.
+			\item Voronoi diagrams to represent pathways and Occupancy maps for beliveable search behaviours.
+		\end{itemize}
+	}
+	
+	\section{Computer skills}
+	\cvdoubleitem{Programming Languages}{C/C++, Python, Java, C\#}{Operating Systems}{Linux, Windows, Android}
+	\cvdoubleitem{Familiar with}{Matlab, JavaScript, HTML/CSS}{Source Control}{Git, Mercurial, SVN}
+	\cvdoubleitem{Game Development}{SDL, Unity}{Build Tools}{CMake, gradle}
+	
+	%	
+	%	\section{References}
+	%	\begin{cvcolumns}
+	%		\cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+	%		\cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+	%		\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+	%	\end{cvcolumns}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+	\nocite{*}
+	\bibliographystyle{plain}
+	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+%% Uncomment and fill this for a cover letter
+%	\clearpage
+
+%	\recipient{Recruitment Team}{(COMPANY NAME)}
+%	\date{MONTH DAY, YEAR}
+%	\opening{Dear Sir or Madam,}
+%	\closing{Sincerely,}
+%	\makelettertitle
+	
+%	\parbox{\linewidth}{
+%		(FILL ME)
+%		\protect
+%	}
+	
+%	\makeletterclosing
+	
+	
+	
+\end{document}
+
+
+%% end of file `cv.tex'.
