@@ -23,7 +23,7 @@
 
 % personal data
 \name{Javier}{García Barcos}
-\title{Experience and Qualifications}                               % optional, remove / comment the line if not wanted
+\title{Experience \& Qualifications}                               % optional, remove / comment the line if not wanted
 \address{Zaragoza (Spain)}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{(+34) 654 996 330}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{javiergarciabarcos@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -47,65 +47,96 @@
 \begin{document}
 	\makecvtitle
 	
-	\section{Interests}
-	\begin{itemize}
-		\item \textbf{Machine Learning}: Bayesian Optimization, Neural Networks, Graphical Models.
-		\item \textbf{Game Development}: Gameplay, Artificial Intelligence, Game Engine.
-		\item But also: Computer Graphics, Computer Vision, IoT and Robotics.
-	\end{itemize}
+%	\section{Interests}
+%	\begin{itemize}
+%		\item \textbf{Machine Learning}: Bayesian Optimization, Neural Networks, Graphical Models.
+%		\item \textbf{Game Development}: Gameplay, Artificial Intelligence, Game Engine.
+%		\item But also: Computer Graphics, Computer Vision, IoT and Robotics.
+%	\end{itemize}
 	
 	\section{Education}
-	\cventry{2015--2017}{Master's Degree in Computer Engineering}{Universidad de Zaragoza}{Spain}{}{
-		Relevant Courses:
+	\cventry{2019--Present}{PhD Student in Computer Science}{}{University of Zaragoza}{Spain}{
 		\begin{itemize}
-			\item Machine Learning for Big Data, Computer Graphics and Multimedia Environments
-			\item High Performance Computing, Technologies for Distributed Applications
-			\item Strategic Business Administration
-		\end{itemize}
-	}
-	\cventry{2011--2015}{Bachelor's Degree in Computer Science}{Universidad de Zaragoza}{Spain}{}{
-		Relevant Courses:
-		\begin{itemize}
-			\item Advanced Algorithms, Compilers, Artificial Intelligence.
-			\item Machine Learning, Computer Graphics, Robotics, Computer Vision.
-			\item Software Verification and Validation, Software Engineering.
-		\end{itemize}
-		\textbf{End-of-Degree Project}: \emph{Bayesian Optimization applied into Fluid Dynamics problems.}
-	}
-	
-	\section{Master's Thesis}
-	\cvitem{Title}{\emph{Automatic extraction of materials from photographs using Bayesian Optimization}}
-	\cvitem{Supervisor}{Rubén Martínez Cantín}
-	\cvitem{Description}{
-		\begin{itemize}
-			\item Developed an automatic, accurate and efficient way of extracting 3D properties from real materials using BayesOpt (C/C++ Bayesian Optimization library) and Maxwell Render (commercial 3D renderer software).
-			\item Researched \textit{Criteria Sampling}, a probabilistic interpretation of the adquisition function (criteria) that allows a stochastic approach in the decision step of the Bayesian Optimization using MCMC. \textit{Criteria Sampling} can be applied to achieve batch parallelization or enable the use of non-myopic adquisition functions.
+			\item Topics: Bayesian Optimization.
+			\item Advisor: Ruben Martinez-Cantin.
 		\end{itemize}
 	}
 
-	
-	\section{Experience}
-	\cventry{2016--2017\newline6 months}{Research Internship}{Centro Universitario de la Defensa }{ \newline General Military Academy of Zaragoza (Spain)}{}{
-		Detailed:
+	\cventry{2015--2017}{Master's Degree in Computer Science}{}{University of Zaragoza}{Spain}{
 		\begin{itemize}
+			\item Best Academic Record Award (2017)
+			\item Master Thesis: \textit{Automatic extraction of materials from photographs using Bayesian optimization}.
+		\end{itemize}
+	}
+
+	\cventry{2011--2015}{Bachelor's Degree in Computer Science}{}{University of Zaragoza}{Spain}{
+		\begin{itemize}
+			\item Specialization in Machine Learning and Algorithms.
+			\item End-of-Degree Project: \emph{Bayesian Optimization applied into Fluid Dynamics problems.}
+		\end{itemize}
+	}
+
+	\section{Publications}
+	\cvitem{2019}{
+		\textbf{Javier Garcia-Barcos, Ruben Martinez-Cantin.} \newline
+		\textit{Parallel Robust Bayesian Optimization with Off-policy Evaluations.} \newline
+		In Workshop on Safety and Robustness in Decision Making at Neurips 2019.
+	}
+	\cvitem{2019}{
+		\textbf{Javier Garcia-Barcos, Ruben Martinez-Cantin.} \newline
+		\textit{Fully Distributed Bayesian Optimization with Stochastic Policies.} \newline  
+		In Proceedings of the 28th International Joint Conference on Artificial Intelligence.}
+	
+	\section{Work Experience}
+	\cventry{2019\newline8 months}{Research Assistant}{}{University of Zaragoza}{Zaragoza (Spain)}{
+		\begin{itemize}
+			\item Research on Bayesian Optimization methods.
+		\end{itemize}
+	}
+
+	\cventry{2018\newline4 months}{Research Engineering Intern}{}{SigOpt}{San Francisco CA (USA)}{
+		\begin{itemize}
+			\item Assist in optimization research and help implement a state of the art ensemble into SigOpt's core service.
+			\item Applied research on Bayesian optimization and Multimetric optimization.
+			\item Writing blogpost discussing the impact of uncertainty on Multimetric optimization.
+			\item Participate in the full development cycle while implementing new features, improvements and research findings.
+		\end{itemize}
+	}
+	
+	\cventry{2016--2017\newline6 months}{Research Intern}{}{University Center of Defense}{Zaragoza (Spain)}{
+		\begin{itemize}
+			\item Part-time internship while finishing my Master's Degree.
 			\item Technology Transfer project in collaboration with NextLimit.
 			\item Mantaining and Improving BayesOpt (C/C++ Bayesian Optimization Library).
 			\item Bayesian Optimization and MCMC Researching.
 		\end{itemize}
 	}
+	
+	\section{Awards \& Grants}
+	\cventry{2019}{DGA Predoctoral Scholarship}{}{Department of Innovation, Research and University (Aragon Goverment)}{Spain}{
+		\begin{itemize}
+			\item Scholarship that covers the duration of the PhD program (2019--2023).
+		\end{itemize}
+	}
+	\cventry{2017}{Best Academic Record Award of Msc Computer Science}{}{University of Zaragoza}{Spain}{
+		\begin{itemize}
+			\item Awarded to the highest GPA of Msc in Computer Science (2015--2017).
+		\end{itemize}
+	}
+	
 	\section{Languages}
 	\cvitemwithcomment{Spanish}{Mother Tongue}{}
-	\cvitemwithcomment{English}{B2 Understanding | B1 Speaking | B1 Writing}{}
+	\cvitemwithcomment{English}{Proficient Spoken and Written}{}
 	
-	\section{Personal Skills}
-	\cvitem{Rugby Player}{\textbf{Good-Communicator, Analytical, Calm under pressure } \newline 
-		Former rugby player for about 4 years. As a Scrum-half player, I was in charge of directing the forwards (8 players) and making tactical decisions on the field.}
-	\cvitem{Team Oriented}{\textbf{Flexible, Cooperative, Broad-Minded} \newline 
-		As a student I've been involved in multiple group projects composed of people with different cultural background, like foreign students, and with different technical knowledge. This requires to take into account each member's necessities, capabilities and personality to ensure a good result.}
-	\cvitem{Curiousity Driven}{\textbf{Independent, Motivated, Fast-learner} \newline
-		I'm always passionate about learning new things and technologies. It was that curiosity that drove me to taught myself how to program. }
+%	\section{Personal Skills}
+%	\cvitem{Rugby Player}{\textbf{Good-Communicator, Analytical, Calm under pressure } \newline 
+%		Former rugby player for about 4 years. As a Scrum-half player, I was in charge of directing the forwards (8 players) and making tactical decisions on the field.}
+%	\cvitem{Team Oriented}{\textbf{Flexible, Cooperative, Broad-Minded} \newline 
+%		As a student I've been involved in multiple group projects composed of people with different cultural background, like foreign students, and with different technical knowledge. This requires to take into account each member's necessities, capabilities and personality to ensure a good result.}
+%	\cvitem{Curiousity Driven}{\textbf{Independent, Motivated, Fast-learner} \newline
+%		I'm always passionate about learning new things and technologies. It was that curiosity that drove me to taught myself how to program. }
 	
-	\section{Relevant Work}
+	\section{Relevant Projects}
 	\cventry{2014--Present}{Collaborating with BayesOpt}{Open Source Bayesian Optimization Library}{}{}{
 		\begin{itemize}
 			\item Written in C/C++ with interfaces to Python and Matlab.
@@ -125,15 +156,15 @@
 			\item OpenMP parallelization to speed things up.
 		\end{itemize}
 	}
-	\cventry{2014--2015}{Unity Agents Project}{AI agents prototype using Unity}{}{}{
-		\begin{itemize}
-			\item Focused on automatic generation of navigation structures, agent spatial reasoning and perception.
-			\item Voronoi diagrams to represent pathways and Occupancy maps for believable search behaviours.
-		\end{itemize}
-	}
+%	\cventry{2014--2015}{Unity Agents Project}{AI agents prototype using Unity}{}{}{
+%		\begin{itemize}
+%			\item Focused on automatic generation of navigation structures, agent spatial reasoning and perception.
+%			\item Voronoi diagrams to represent pathways and Occupancy maps for believable search behaviours.
+%		\end{itemize}
+%	}
 	
 	\section{Computer skills}
-	\cvdoubleitem{Programming Languages}{C/C++, Python, Java, C\#}{Operating Systems}{Linux, Windows, Android}
+	\cvdoubleitem{Programming Languages}{C/C++, Python, Java, C\#, Lua}{Operating Systems}{Linux, Windows, Android}
 	\cvdoubleitem{Familiar with}{Matlab, JavaScript, HTML/CSS}{Source Control}{Git, Mercurial, SVN}
 	\cvdoubleitem{Game Development}{SDL, Unity}{Build Tools}{CMake, gradle}
 	
@@ -150,7 +181,7 @@
 	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 	\nocite{*}
 	\bibliographystyle{plain}
-	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 	
 	% Publications from a BibTeX file using the multibib package
 	%\section{Publications}
